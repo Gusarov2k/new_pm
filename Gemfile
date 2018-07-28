@@ -24,10 +24,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "haml-rails", "~> 1.0"
 
 
-
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   gem 'factory_bot'
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :development do
