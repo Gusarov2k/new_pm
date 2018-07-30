@@ -22,5 +22,17 @@ module Qna
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # КОнфигурация начальной генерации тестов для определённых классов
+    config.generators do
+        g.test_framework    :rspec,
+                            fixtures: true,
+                            views_spec: false,
+                            helper_specs: false,
+                            routing_specs: false,
+                            request_specs: false,
+                            controller_spec: true
+
+    end
   end
 end
