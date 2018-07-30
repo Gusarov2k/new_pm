@@ -24,7 +24,7 @@ module Qna
     config.active_record.raise_in_transactional_callbacks = true
 
     # КОнфигурация начальной генерации тестов для определённых классов
-    config.generators do
+    config.generators do |g|
         g.test_framework    :rspec,
                             fixtures: true,
                             views_spec: false,
